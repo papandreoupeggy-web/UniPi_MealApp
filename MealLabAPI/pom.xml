@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <!-- basic info about Maven Project-->
+  <modelVersion>4.0.0</modelVersion> 
+  <groupId>papandreou.unipi.meallab</groupId>
+  <artifactId>MealLabAPI</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>Library for API</description>
+ <!-- use of UTF-8 for character encoding-->
+   <properties>
+      <maven.compiler.source>17</maven.compiler.source>
+      <maven.compiler.target>17</maven.compiler.target>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <!-- use of http for rest client call-->
+  <dependencies>
+  	<dependency>
+  		<groupId>org.apache.httpcomponents.client5</groupId>
+  		<artifactId>httpclient5</artifactId>
+  		<version>5.2.1</version> <!-- use of most popular version for now-->
+  	</dependency>
+  	<!-- use of jackson for JSON serialization or deserialization to JAVA-->
+  	<dependency>
+  		<groupId>com.fasterxml.jackson.core</groupId>
+  		<artifactId>jackson-databind</artifactId>
+  		<version>2.15.2</version> <!-- use of most popular version for now-->
+  	</dependency>
+  	<!-- use of JUnit for code testing-->
+  	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<version>4.13.2</version>
+  		<scope>test</scope> <!-- use only for testing and not for compile-->
+  	</dependency>
+  </dependencies>
+</project>
