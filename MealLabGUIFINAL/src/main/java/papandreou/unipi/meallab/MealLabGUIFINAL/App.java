@@ -57,7 +57,7 @@ StartBtn = new Button ("What's on the menu today?");
 StartBtn.setStyle("-fx-background-color: #FF5722; " +"-fx-text-fill: white; " +"-fx-font-weight: bold; ");
 
 
-//handle event on Start Btn
+//handle event on Start Button
 StartBtn.setOnMouseClicked(this);
 
 

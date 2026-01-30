@@ -19,8 +19,8 @@ import meallab.model.Meals.Meal;
 
 //https://www.tutorialspoint.com/javafx/javafx_listview.htm
 //https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/SelectionModel.html#SelectionModel--
-public class FavoritesList implements EventHandler<MouseEvent>{ //for users' clicks { //new public class for favorite list on another scene
-	
+//new public class for favorite list on another scene
+public class FavoritesList implements EventHandler<MouseEvent>{ //for users' clicks 
 	Stage secondStage;
 	
 	Scene secondScene;
@@ -78,7 +78,7 @@ public class FavoritesList implements EventHandler<MouseEvent>{ //for users' cli
 	label.setStyle("-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333333; -fx-padding: 10px;");
 	favoritesListView =new ListView<Meal>();
 	favoritesListView.setPrefHeight(350); 
-    favoritesListView.setPrefWidth(300);
+    favoritesListView.setPrefWidth(400);
     favoritesListView.setStyle("-fx-font-size: 14px; -fx-border-color: #F5B7B1;");
     
     mealImageView = new ImageView();

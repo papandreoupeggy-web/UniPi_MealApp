@@ -19,7 +19,8 @@ import meallab.model.Meals.Meal;
 
 //https://www.tutorialspoint.com/javafx/javafx_listview.htm
 //https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/SelectionModel.html#SelectionModel--
-public class CookedList implements EventHandler<MouseEvent>{ //for users' clicks { //new public class for favourite list on another scene
+//new public class for cooked list on another scene
+public class CookedList implements EventHandler<MouseEvent>{ //for users' clicks 
 	
 	Stage thirdStage;
 	
@@ -112,12 +113,12 @@ public class CookedList implements EventHandler<MouseEvent>{ //for users' clicks
 	}
 
 	//add the characteristics
-	thirdScene=new Scene(rootGridPane,800,700);
+	thirdScene=new Scene(rootGridPane,850,700);
 	thirdStage.setTitle(pageTitle);
 	
 	rootGridPane.setAlignment(Pos.CENTER);
     rootGridPane.setVgap(15);
-    rootGridPane.setHgap(15);
+    rootGridPane.setHgap(10);
     rootGridPane.add(label, 0, 0);
     rootGridPane.add(cookedListView, 0, 1);
     rootGridPane.add(buttonPane, 0, 2);
@@ -126,7 +127,7 @@ public class CookedList implements EventHandler<MouseEvent>{ //for users' clicks
     //image placement
     rootGridPane.add(mealImageView, 1, 1);
      
-    rootGridPane.add(responseArea, 0, 4);
+    rootGridPane.add(responseArea, 0, 4,2,1);
 	
 	rootFlowPane.setHgap(10);
 	rootFlowPane.setVgap(15);

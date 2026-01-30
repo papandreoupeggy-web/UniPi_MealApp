@@ -29,6 +29,7 @@ import meallab.services.MealDBService;
 //https://www.tutorialspoint.com/javafx/javafx_textarea.htm
 //https://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html
 
+//class for main menu page
 public class LabMenuView implements EventHandler<MouseEvent>{ //for users' clicks
 
 	//add values
